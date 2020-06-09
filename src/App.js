@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 
 function App() {
-  const count = useSelector((state) => state);
+  const counter = useSelector((state) => state.counter);
   const dispatch = useDispatch();
 
   const handleIncrement = () => dispatch({ type: 'INCREMENT' });
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="app">
-      <div className="count">{count}</div>
+      <div className="count">{counter}</div>
       <button className="count-control" onClick={handleDecrement}>
         −
       </button>
