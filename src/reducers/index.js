@@ -3,7 +3,7 @@ import undoable from 'redux-undo';
 import counter from './counter';
 
 const undoConfig = {
-  ignoreInitialState: true,
+  debug: true,
 };
 
 const rootReducer = combineReducers({
